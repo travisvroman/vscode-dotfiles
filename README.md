@@ -26,11 +26,11 @@ This assumes you've cloned this repo in your home directory, otherwise you will 
 
 ### macOS
 
-- Make sure target folder exists: `mkdir -p ~/.config/Code/User/`
+- Make sure target folder exists: `mkdir -p ~/Library/Application\ Support/Code/User/`
 - Ensure settings.json does not already exist: `mv ~/Library/Application\ Support/Code/User/settings.json ~/Library/Application\ Support/Code/User/settings.original.json`
 - Ensure keybindings.json does not already exist: `mv ~/Library/Application\ Support/Code/User/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.original.json`
-- Symlink settings.json: `ln -s ~/vscode-dotfiles/.config/User/Code/settings.json ~/Library/Application\ Support/Code/User/settings.json`
-- Symlink keybindings.json: `ln -s ~/vscode-dotfiles/.config/User/Code/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json`
+- Symlink settings.json: `ln -s ~/vscode-dotfiles/.config/Code/User/settings.json ~/Library/Application\ Support/Code/User/settings.json`
+- Symlink keybindings.json: `ln -s ~/vscode-dotfiles/.config/Code/User/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json`
 
 ### Windows
 
