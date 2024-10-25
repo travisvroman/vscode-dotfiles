@@ -34,11 +34,14 @@ This assumes you've cloned this repo in your home directory, otherwise you will 
 
 ### Windows
 
-- Make sure target folder exists: `if not exists %APPDATA%\Code\User\ mkdir %APPDATA%\Code\User\`
-- Ensure settings.json does not already exist: `mv %APPDATA%\Code\User\settings.json %APPDATA%\Code\User\settings.original.json`
-- Ensure keybindings.json does not already exist: `mv %APPDATA%\Code\User\keybindings.json %APPDATA%\Code\User\keybindings.original.json`
-- Symlink settings.json: `mklink /D %APPDATA%\Code\User\settings.json %USERPROFILE%\vscode-dotfiles\.config\User\Code\settings.json`
-- Symlink keybindings.json: `mklink /D %APPDATA%\Code\User\keybindings.json %USERPROFILE%\vscode-dotfiles\.config\User\Code\keybindings.json`
+NOTE: It is likely required to use an Administrator Command Prompt for the following:
 
+- Make sure target folder exists: `if not exist %APPDATA%\Code\User\ mkdir %APPDATA%\Code\User\`
+- Ensure settings.json does not already exist: `move %APPDATA%\Code\User\settings.json %APPDATA%\Code\User\settings.original.json`
+- Ensure keybindings.json does not already exist: `move %APPDATA%\Code\User\keybindings.json %APPDATA%\Code\User\keybindings.original.json`
+- Symlink settings.json: `mklink %APPDATA%\Code\User\settings.json %USERPROFILE%\vscode-dotfiles\.config\Code\User\settings.json`
+- Symlink keybindings.json: `mklink %APPDATA%\Code\User\keybindings.json %USERPROFILE%\vscode-dotfiles\.config\Code\User\keybindings.json`
+
+## Additional Info
 See this page for more details if needed:
 https://code.visualstudio.com/docs/getstarted/settings
