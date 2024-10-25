@@ -21,8 +21,8 @@ This assumes you've cloned this repo in your home directory, otherwise you will 
 - Make sure target folder exists: `mkdir -p ~/.config/Code/User/`
 - Ensure settings.json does not already exist: `mv ~/.config/Code/User/settings.json ~/.config/Code/User/settings.original.json`
 - Ensure keybindings.json does not already exist: `mv ~/.config/Code/User/keybindings.json ~/.config/Code/User/keybindings.original.json`
-- Symlink settings.json: `ln -s ~/vscode-dotfiles/.config/User/Code/settings.json ~/.config/User/Code/settings.json`
-- Symlink keybindings.json: `ln -s ~/vscode-dotfiles/.config/User/Code/keybindings.json ~/.config/User/Code/keybindings.json`
+- Symlink settings.json: `ln -s ~/vscode-dotfiles/.config/Code/User/settings.json ~/.config/Code/User/settings.json`
+- Symlink keybindings.json: `ln -s ~/vscode-dotfiles/.config/Code/User/keybindings.json ~/.config/Code/User/keybindings.json`
 
 ### macOS
 
@@ -43,5 +43,6 @@ NOTE: It is likely required to use an Administrator Command Prompt for the follo
 - Symlink keybindings.json: `mklink %APPDATA%\Code\User\keybindings.json %USERPROFILE%\vscode-dotfiles\.config\Code\User\keybindings.json`
 
 ## Additional Info
+
 See this page for more details if needed:
 https://code.visualstudio.com/docs/getstarted/settings
